@@ -2,20 +2,20 @@ namespace Gravy.Common;
 
 struct EdgeInsets
 {
-    public float mTop;
-    public float mBottom;
-    public float mLeft;
-    public float mRight;
+	public float mTop;
+	public float mBottom;
+	public float mLeft;
+	public float mRight;
 
     public this(float top, float bottom, float left, float right)
     {
-        mTop = top;
-        mBottom = bottom;
-        mLeft = left;
-        mRight = right;
-    }
+		mTop = top;
+		mBottom = bottom;
+		mLeft = left;
+		mRight = right;
+	}
 
-   	public static EdgeInsets All(float value) => EdgeInsets(value, value, value, value);
+	public static EdgeInsets All(float value) => EdgeInsets(value, value, value, value);
 
 	public static EdgeInsets Uniform(float horizontal, float vertical) => EdgeInsets(vertical, vertical, horizontal, horizontal);
 
