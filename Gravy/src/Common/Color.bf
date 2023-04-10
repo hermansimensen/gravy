@@ -1,5 +1,8 @@
 namespace Gravy.Common;
 
+using System;
+
+[AlwaysInclude, Reflect]
 struct Color
 {
     float mR;
@@ -15,14 +18,14 @@ struct Color
         mA = alpha;
     }
 
+	public const Color White = Color(1.0f, 1.0f, 1.0f, 1.0f);
+	public const Color Black = Color(0.0f, 0.0f, 0.0f, 1.0f);
+	public const Color Red = Color(1.0f, 0.0f, 0.0f, 1.0f);
+	public const Color Green = Color(0.0f, 1.0f, 0.0f, 1.0f);
+	public const Color Blue = Color(0.0f, 0.0f, 1.0f, 1.0f);
+	public const Color Grey = Color(0.5f, 0.5f, 0.5f, 1.0f);
+	public const Color Purple = Color(0.5f, 0.0f, 0.5f, 1.0f);
+	public const Color Orange = Color(1.0f, 0.5f, 0.0f, 1.0f);
+	public const Color LightGrey = Color(0.8f, 0.8f, 0.8f, 1.0f);
 	public static Color Custom(float r, float g, float b, float a) => Color(r, g, b, a);
-	public static Color White => Color(1.0f, 1.0f, 1.0f, 1.0f);
-	public static Color Black => Color(0.0f, 0.0f, 0.0f, 1.0f);
-	public static Color Red => Color(1.0f, 0.0f, 0.0f, 1.0f);
-	public static Color Green => Color(0.0f, 1.0f, 0.0f, 1.0f);
-	public static Color Blue => Color(0.0f, 0.0f, 1.0f, 1.0f);
-	public static Color Grey => Color(0.5f, 0.5f, 0.5f, 1.0f);
-	public static Color Purple => Color(0.5f, 0.0f, 0.5f, 1.0f);
-	public static Color Orange => Color(1.0f, 0.5f, 0.0f, 1.0f);
-	public static Color LightGrey => Color(0.8f, 0.8f, 0.8f, 1.0f);
 }
