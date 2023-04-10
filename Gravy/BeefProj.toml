@@ -1,0 +1,9 @@
+FileVersion = 1
+
+[Project]
+Name = "Gravy"
+TargetType = "BeefLib"
+StartupObject = "Gravy.Program"
+
+[Configs.Debug.Win64]
+BuildKind = "StaticLib"
