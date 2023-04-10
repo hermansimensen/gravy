@@ -1,8 +1,5 @@
 namespace Gravy.Common;
 
-using System;
-
-[AlwaysInclude, Reflect]
 struct Color
 {
     float mR;
