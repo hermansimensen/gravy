@@ -7,7 +7,7 @@ struct EdgeInsets
 	public float mLeft;
 	public float mRight;
 
-    public this(float top, float bottom, float left, float right)
+	public this(float top, float bottom, float left, float right)
     {
 		mTop = top;
 		mBottom = bottom;
